@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CodeTrack | Problems</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/responsive.css"></head>
+<body><header class="navbar"><a href="../index.html" class="logo"><span>&lt;/&gt;</span> CodeTrack</a><nav><a href="../index.html">Dashboard</a><a href="problems.html" class="active">Problems</a><a href="add-problem.html">Add Problem</a><a href="revision.html">Revision</a><a href="analytics.html">Analytics</a></nav><button id="themeBtn" class="theme-btn">☀️</button></header>
+<main class="container"><section class="page-heading"><p class="eyebrow">PROBLEM LIBRARY</p><h1>My Coding Problems</h1><p>Search and manage your coding practice.</p></section>
+<section class="filters"><input type="text" id="searchInput" placeholder="🔍 Search problem...">
+<select id="topicFilter"><option value="all">All Topics</option><option>Arrays</option><option>Strings</option><option>Linked Lists</option><option>Stack</option><option>Queue</option><option>Trees</option><option>Graphs</option><option>Dynamic Programming</option></select>
+<select id="difficultyFilter"><option value="all">All Difficulty</option><option>Easy</option><option>Medium</option><option>Hard</option></select>
+<select id="statusFilter"><option value="all">All Status</option><option>Solved</option><option>Unsolved</option><option>Revision</option></select></section>
+<section id="allProblems" class="problem-grid"></section></main>
+<script src="../js/data.js"></script><script src="../js/problems.js"></script></body></html>

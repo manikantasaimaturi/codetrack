@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeTrack | Dashboard</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="navbar"><a href="index.html" class="logo"><span>&lt;/&gt;</span> CodeTrack</a>
+<nav><a href="index.html" class="active">Dashboard</a><a href="pages/problems.html">Problems</a><a href="pages/add-problem.html">Add Problem</a><a href="pages/revision.html">Revision</a><a href="pages/analytics.html">Analytics</a></nav>
+<button id="themeBtn" class="theme-btn">☀️</button></header>
+<main class="container">
+<section class="hero"><div><p class="eyebrow">CODING PRACTICE TRACKER</p><h1>Build your coding habit.<br><span>Track your progress.</span></h1><p class="hero-text">Keep your coding problems, progress, revision tasks and achievements in one place.</p><a href="pages/add-problem.html" class="btn">+ Add Problem</a></div><div class="hero-code"><pre>function improve() {
+    practice();
+    learn();
+    repeat();
+}</pre></div></section>
+<section class="stats">
+<div class="stat-card"><div class="stat-icon">🧩</div><p>Total Problems</p><h2 id="totalProblems">0</h2></div>
+<div class="stat-card"><div class="stat-icon">🟢</div><p>Easy</p><h2 id="easyProblems">0</h2></div>
+<div class="stat-card"><div class="stat-icon">🟡</div><p>Medium</p><h2 id="mediumProblems">0</h2></div>
+<div class="stat-card"><div class="stat-icon">🔴</div><p>Hard</p><h2 id="hardProblems">0</h2></div>
+</section>
+<section class="dashboard-grid">
+<div class="panel"><div class="panel-header"><h2>Daily Goal</h2><span id="dailyProgressText">0 / 3</span></div><div class="goal-circle"><span id="goalPercentage">0%</span></div><p class="center-text">Problems solved today</p></div>
+<div class="panel"><div class="panel-header"><h2>Coding Streak</h2><span>🔥</span></div><h3 class="big-number" id="streak">0</h3><p>consecutive days</p><div class="streak-info"><span>Longest Streak</span><strong id="longestStreak">0 days</strong></div></div>
+</section>
+<section class="section"><div class="section-header"><h2>DSA Progress</h2><a href="pages/analytics.html">View Analytics →</a></div>
+<div class="progress-panel">
+<div class="topic-progress"><div class="progress-title"><span>Arrays</span><span id="arraysCount">0 / 20</span></div><div class="progress"><div id="arraysProgress"></div></div></div>
+<div class="topic-progress"><div class="progress-title"><span>Strings</span><span id="stringsCount">0 / 20</span></div><div class="progress"><div id="stringsProgress"></div></div></div>
+<div class="topic-progress"><div class="progress-title"><span>Linked Lists</span><span id="linkedCount">0 / 15</span></div><div class="progress"><div id="linkedProgress"></div></div></div>
+<div class="topic-progress"><div class="progress-title"><span>Trees</span><span id="treesCount">0 / 20</span></div><div class="progress"><div id="treesProgress"></div></div></div>
+<div class="topic-progress"><div class="progress-title"><span>Graphs</span><span id="graphsCount">0 / 20</span></div><div class="progress"><div id="graphsProgress"></div></div></div>
+</div></section>
+<section class="section"><div class="section-header"><h2>Recent Problems</h2><a href="pages/problems.html">View All →</a></div><div id="recentProblems" class="problem-grid"></div></section>
+</main>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>
